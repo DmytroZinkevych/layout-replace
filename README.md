@@ -1,2 +1,8 @@
 # layout-replace
-JavaFX app which replaces English chars to Ukrainian chars and vice versa according to keyboard layout
+__*JavaFX app which replaces English chars to Ukrainian chars (and vice versa) in clipboard according to keyboard layout*__<br /><br />
+
+
+Ця програма бере текст із буфера обміну, заміняє в ньому символи англійської розкладки клавіатури на відповідні їм в українській (або навпаки, залежно від вибраної дії) та копіює змінений текст назад до буфера обміну.<br /><br />
+
+
+*Програма є у вигляді проекту __IntelliJ IDEA__ (папка __`LayoutReplace`__). Безпосередньо код є в папці __`LayoutReplace/src`__, __jar__-файл (готова до запуску java-програма) знаходиться в папці __`LayoutReplace/out/artifacts/LayoutReplace_jar`__ (це зроблено для того, щоб можна було запускати програму окремо від середовища розробки). Для зручного користування програмою (на __Windows__) рекомендую винести ярлик __jar__-файлу на __`Робочий стіл`__ та присвоїти йому значок із файлу __`icon.ico`__.*
