@@ -1,4 +1,4 @@
-# layout-replace
+# Layout Replace
 __*JavaFX app which replaces English chars to Ukrainian chars (and vice versa) in clipboard according to keyboard layout*__<br /><br />
 
 
