@@ -1,5 +1,6 @@
 # Layout Replace
-__*JavaFX app which replaces English chars to Ukrainian chars (and vice versa) in clipboard according to keyboard layout*__<br/>
+__*JavaFX app which replaces English chars to Ukrainian chars (and vice versa) in clipboard according to keyboard layout*__<br/><br/>
+
 
 Ця програма бере текст із буфера обміну, заміняє в ньому символи англійської розкладки клавіатури на відповідні їм в українській розкладці (або навпаки, залежно від вибраної дії) та копіює змінений текст назад до буфера обміну.<br/>
 
