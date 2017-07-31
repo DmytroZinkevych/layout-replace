@@ -38,10 +38,11 @@ public class LayoutReplace extends Application {
         boolean isUpper;
         final Clipboard clipboard = Clipboard.getSystemClipboard();
         String text = clipboard.getString();
+        if (text == null || text.equals("")) return;
         char[] charArr = text.toCharArray();
 
         for (int i = 0; i < charArr.length; i++) {
-            //if (charArr[i] == '\n' || charArr[i] == '\r') continue;
+            if (charArr[i] == '\n' || charArr[i] == '\r') continue;
             isUpper = false;
             if (Character.isUpperCase(charArr[i]) && indexOf(fromArr, charArr[i]) == -1) {
                 isUpper = true;
