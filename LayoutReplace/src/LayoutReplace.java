@@ -40,7 +40,6 @@ public class LayoutReplace extends Application {
         String text = clipboard.getString();
         if (text == null || text.equals("")) return;
         char[] charArr = text.toCharArray();
-
         for (int i = 0; i < charArr.length; i++) {
             if (charArr[i] == '\n' || charArr[i] == '\r') continue;
             isUpper = false;
@@ -49,14 +48,9 @@ public class LayoutReplace extends Application {
                 charArr[i] = Character.toLowerCase(charArr[i]);
             }
             int index = indexOf(fromArr, charArr[i]);
-            if (index == -1) {
-                if (isUpper) charArr[i] = Character.toUpperCase(charArr[i]);
-                continue;
-            }
-            charArr[i] = toArr[index];
+            if (index != -1) charArr[i] = toArr[index];
             if (isUpper) charArr[i] = Character.toUpperCase(charArr[i]);
         }
-
         final ClipboardContent content = new ClipboardContent();
         content.putString(String.valueOf(charArr));
         clipboard.setContent(content);
